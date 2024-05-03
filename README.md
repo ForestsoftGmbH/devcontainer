@@ -3,5 +3,5 @@
 ## Execute
 
 ```bash
-docker run --rm -it ghcr.io/forestsoftgmbh/devcontainer:latest bash
+docker run --pull=always --rm -it ghcr.io/forestsoftgmbh/devcontainer:latest bash
 ```
