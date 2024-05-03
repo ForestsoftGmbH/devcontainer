@@ -25,6 +25,7 @@ jobs:
         with:
           # Change this to point to your image name
           imageName: ghcr.io/forestsoftgmbh/devcontainer
+          cacheFrom: forestsoft/devcontainer:latest
           # Change this to be your CI task/script
           runCmd: |
             # Add multiple commands to run if needed
