@@ -1,9 +1,11 @@
 FROM mcr.microsoft.com/devcontainers/base:ubuntu
 
+ENV GITHUB_USER="Forestsoft-de"
+
 USER root
 RUN usermod -d /home/coder -l coder vscode \
     && mv /home/vscode /home/coder \
     && mv /etc/sudoers.d/vscode /etc/sudoers.d/coder \
     && sed -i s/vscode/coder/ /etc/sudoers.d/coder \
-    && echo "chezmoi init --apply Forestsoft-de --one-shot" >> /home/coder/.bashrc
+    && echo "alias kickstart='chezmoi init --apply $GITHUB_USER --one-shot'" >> /home/coder/.bashrc
 USER coder
