@@ -34,7 +34,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	//"postCreateCommand": "",
+	//"postCreateCommand": "chezmoi init Forestsoft-de",
 
 	// Configure tool-specific properties.
 	// "customizations": {},
