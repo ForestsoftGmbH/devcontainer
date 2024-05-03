@@ -26,8 +26,8 @@ jobs:
           # Change this to point to your image name
           imageName: ghcr.io/forestsoftgmbh/devcontainer
           cacheFrom: forestsoft/devcontainer:latest
+          push: always
           # Change this to be your CI task/script
           runCmd: |
-            # Add multiple commands to run if needed
-            make install-packages
-            make ci-build
+             chezmoi init Forestsoft-de
+            
