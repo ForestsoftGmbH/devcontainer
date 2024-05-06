@@ -28,6 +28,6 @@ jobs:
           cacheFrom: forestsoft/devcontainer:latest
           push: always
           # Change this to be your CI task/script
-          #runCmd: |
-           #  chezmoi init Forestsoft-de
+          runCmd: |
+             mkdir -p /opt/template/ && rsync -arv /home/coder/ /opt/template/home/
             
