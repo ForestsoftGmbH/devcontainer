@@ -38,7 +38,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "mkdir -p /opt/template/ && rsync -arv /home/coder/ /opt/template/home/",
+	//"postCreateCommand": "mkdir -p /opt/template/ && rsync -arv /home/coder/ /opt/template/home/",
 
 	// Configure tool-specific properties.
 	// "customizations": {},

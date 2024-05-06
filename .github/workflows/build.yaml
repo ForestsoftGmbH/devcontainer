@@ -29,5 +29,5 @@ jobs:
           push: always
           # Change this to be your CI task/script
           runCmd: |
-             mkdir -p /opt/template/ && rsync -arv /home/coder/ /opt/template/home/
+             sudo mkdir -p /opt/template/ && sudo rsync -arv /home/coder/ /opt/template/home/
             
