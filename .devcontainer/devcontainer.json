@@ -17,6 +17,7 @@
 		"ghcr.io/jungaretti/features/make:1": {},
 		"ghcr.io/rio/features/chezmoi:1": {},
 		"ghcr.io/rio/features/k9s:1": {},
+		"ghcr.io/devcontainers/features/node:1": {},
 		"ghcr.io/devcontainers-contrib/features/yamllint:2": {},
 		"ghcr.io/dhoeric/features/stern:1": {},
 		"ghcr.io/eitsupi/devcontainer-features/jq-likes:2": {},
