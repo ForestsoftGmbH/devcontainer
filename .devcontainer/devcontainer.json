@@ -11,6 +11,9 @@
 			"extensionsExtra": "xdebug redis yaml mbstring"
 			
 		},
+		"ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
+			"packages": "apache2"
+		},
 		"ghcr.io/jungaretti/features/make:1": {},
 		"ghcr.io/rio/features/chezmoi:1": {},
 		"ghcr.io/rio/features/k9s:1": {},
