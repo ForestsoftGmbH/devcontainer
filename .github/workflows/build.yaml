@@ -26,6 +26,16 @@ jobs:
           # Change this to point to your image name
           imageName: ghcr.io/forestsoftgmbh/devcontainer
           cacheFrom: forestsoft/devcontainer:latest
+          subFolder: base
+          push: always
+          
+      - name: Build PHP Web
+        uses: devcontainers/ci@v0.3
+        with:
+          # Change this to point to your image name
+          imageName: ghcr.io/forestsoftgmbh/devcontainer:latest-php
+          cacheFrom: forestsoft/devcontainer:latest
+          subFolder: php
           push: always
           # Change this to be your CI task/script
           runCmd: |

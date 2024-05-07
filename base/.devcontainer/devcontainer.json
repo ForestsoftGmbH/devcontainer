@@ -7,10 +7,6 @@
         "dockerfile": "Dockerfile"
     },
 	"features": {
-		"ghcr.io/shyim/devcontainers-features/php:0": {
-			"extensionsExtra": "xdebug redis yaml mbstring"
-			
-		},
 		"ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
 			"packages": "apache2"
 		},
