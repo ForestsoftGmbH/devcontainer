@@ -8,7 +8,7 @@
     },
 	"features": {
 		"ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
-			"packages": "apache2"
+			"packages": "apache2 default-mysql-client"
 		},
 		"ghcr.io/jungaretti/features/make:1": {},
 		"ghcr.io/rio/features/chezmoi:1": {},
