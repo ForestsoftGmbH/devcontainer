@@ -42,5 +42,5 @@ jobs:
           # Change this to point to your image name
           imageName: ghcr.io/forestsoftgmbh/devcontainer/${{ matrix.type }}
           cacheFrom: forestsoft/devcontainer:latest
-          subFolder: ${{ matrix.type }}/
+          subFolder: ./${{ matrix.type }}/
           push: always  
