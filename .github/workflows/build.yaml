@@ -28,12 +28,19 @@ jobs:
           cacheFrom: forestsoft/devcontainer:latest
           subFolder: base
           push: always
-          
-      - name: Build PHP Web
+        
+  build_application_containers:
+    needs: build
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        type: ["php", "golang"]
+    steps:  
+      - name: Build Application
         uses: devcontainers/ci@v0.3
         with:
           # Change this to point to your image name
-          imageName: ghcr.io/forestsoftgmbh/devcontainer/php
+          imageName: ghcr.io/forestsoftgmbh/devcontainer/${{ matrix.type }}
           cacheFrom: forestsoft/devcontainer:latest
-          subFolder: php
+          subFolder: ${{ matrix.type }}
           push: always  
