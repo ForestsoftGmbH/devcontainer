@@ -2,7 +2,7 @@ FROM ghcr.io/forestsoftgmbh/devcontainer:latest
 
 USER root
 
-RUN curl -SLs https://raw.githubusercontent.com/shyim/devcontainers-features/main/src/php/install.sh | EXTENSIONSEXTRA="xdebug redis yaml mbstring" VERSION="8.2" sudo bash -s --
+RUN curl -SLs https://github.com/devcontainers/features/blob/main/src/php/install.sh | VERSION="8.2" bash -s --
 
 RUN a2dissite 000-default \
     && a2enmod proxy proxy_fcgi \
