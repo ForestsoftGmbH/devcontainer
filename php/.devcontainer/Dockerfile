@@ -5,7 +5,7 @@ USER root
 RUN curl -SLs https://raw.githubusercontent.com/shyim/devcontainers-features/main/src/php/install.sh | VERSION="8.2" bash -s --
 
 RUN a2dissite 000-default \
-    && a2enmod proxy proxy_fcgi \
+    && a2enmod proxy proxy_fcgi rewrite \
     && usermod -a -G www-data coder \
     && update-rc.d apache2 defaults \
     && update-rc.d php8.2-fpm defaults \
