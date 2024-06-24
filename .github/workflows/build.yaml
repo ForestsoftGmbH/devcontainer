@@ -34,7 +34,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        type: ["php", "golang"]
+        type: ["full", "golang"]
     steps:  
       - name: Checkout (GitHub)
         uses: actions/checkout@v3
