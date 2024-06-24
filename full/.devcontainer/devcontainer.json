@@ -8,9 +8,6 @@
     },
     "features": {
 	"ghcr.io/devcontainers/features/go:1": {},
-        "ghcr.io/devcontainers/templates/typescript-node:3.2.0": {
-		"imageVariant": "22-bookworm"
-	},
         "ghcr.io/shyim/devcontainers-features/php:0.1.1": {
 	   "extensionsExtra": "xdebug redis yaml mbstring"
 	}
